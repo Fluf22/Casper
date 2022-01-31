@@ -22,7 +22,7 @@
                     {{#if bio}}
                         {{bio}}
                     {{else}}
-                        {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}} published
+                        {{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}} {{t "published"}}
                     {{/if}}
                 </p>
 
@@ -38,6 +38,9 @@
                     {{/if}}
                     {{#if facebook}}
                     <span><a class="author-profile-social-link" href="{{facebook_url}}" target="_blank" rel="noopener">{{facebook_url}}</a></span>
+                    {{/if}}
+                    {{#if @custom.telegram_url}}
+                    <span><a class="author-profile-social-link" href="{{@custom.telegram_url}}" target="_blank" rel="noopener">{{@custom.telegram_url}}</a></span>
                     {{/if}}
                 </div>
 

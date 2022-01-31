@@ -176,6 +176,16 @@
                 "type": "boolean",
                 "default": true,
                 "group": "post"
+            },
+            "telegram_url": {
+                "type": "text",
+                "default": "",
+                "group": "links"
+            },
+            "display_rss_icon": {
+                "type": "boolean",
+                "default": false,
+                "group": "links"
             }
         }
     },
